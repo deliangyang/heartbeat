@@ -1,0 +1,11 @@
+[mail]
+username = "admin@xxxxx.com"
+password = "xxxxx"
+host = "smtp.mxhichina.com"
+from = "admin@xxx.com"
+port = 25
+
+[[websites]]
+url = "http://www.xxxx.com/xxx/"
+minute = 5
+to = ["xxxx@qq.com", "xxx@qq.com"]
