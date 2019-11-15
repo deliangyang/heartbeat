@@ -15,7 +15,7 @@ var (
 )
 
 func init() {
-	flag.StringVar(&conf, "conf", "", "mail config filename")
+	flag.StringVar(&conf, "conf", "", "config filename")
 	flag.Parse()
 }
 
