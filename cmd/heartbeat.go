@@ -28,6 +28,7 @@ func main() {
 	wg := sync.WaitGroup{}
 
 	for _, website := range conf.Websites {
+		w := website
 		wg.Add(1)
 		go func(w pkg.Website) {
 			for {
@@ -43,7 +44,7 @@ func main() {
 				log.Println("end", w.URL)
 				time.Sleep(time.Duration(w.Minute) * time.Minute)
 			}
-		}(website)
+		}(w)
 	}
 
 	wg.Wait()
